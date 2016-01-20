@@ -20,3 +20,4 @@ OUTPUT_PATH = '/output/'
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+TRAVIS_CI_BADGE = "https://travis-ci.org/Hernrup/hernrup_se_colors.svg?branch=master"
