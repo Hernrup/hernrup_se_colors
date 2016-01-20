@@ -1,0 +1,28 @@
+branches:
+  only:
+  - master
+env:
+  global:
+    secure: !!binary |
+      aU1YbVlvTWZGT2N4RElZUHNFUlN5RVA4MU1SWGZWUkFUMnBsU21Yank4RjJobU1GZ25mZjhRRmdC
+      RkxzMzQ3alFaaUUrQm1VYzNnOGVEbzVLVitBZzRqWnZJVTIyOHRDbHdoTDBKaWJWVUdSS2xhNHpN
+      VjJXQXVpcWtkMmdxVTlGVUVkcFErd0hRMUwwM0hvckw1VGl1cWY1WnJBRHZMTHRzSVZZRkZMNFJF
+      dlhXcTl0Vy80clBNWElnOVQ4OGpqd284ejdZUGZoN2M4VHNPcVU4ZUlqNTFlUmdBWndUMzc1Nk5w
+      TVQwRjAvMCtCV2NzSWdwM2d0c1JPVDVYMVlrV3JMNzdhWFJIY2ZBWHY3eFM3SUlOMGhZZHZ6U1U5
+      SXIySEVxOGxBb2Y4MHI5QlBnTE9WcHhPTDZqSVRJbk1GQXJVdzFIL3d6YlVtdEh3anFMYXA1Y0Zx
+      b1ZSaGhCSy9QWnV4MU5jWm1sbGtqdDFlN0tPUDNwVklESjN5TFluNEJib3FueGlWK0ZkR0JZMVFx
+      Tm5zUjFnZVJWT3NhbXNCU3JRenZ6ZXFIcldGSndpTmRmTWp5U0toK050bTBYbi84MHVDREFlSjVm
+      RTd5VkN1OTN0ZHJ0WnhnSU0yUlVxUUE5a0JuL3IrdGplcEpKeElIeDdmYythTkZFUkVnUFI3bmg2
+      MzYvU0lXdnAyUWp2Um13NU11cVJ0Q0oyMy9jRnZveFEwalB2SEcwMXBTZEhxRHZjS3hOR0tYaWFM
+      WE4rbmZQUTh4TEY4cWRvSzZ3YjhoVFRycnplRTc2T2NUbzNoM2p0RGw2OE83SEpKd0JNaWZVRDdt
+      amVMKy9MUUNicXpaK2k5OE1YdVF1ZGM5TC9HQkI2eXRDTkxyNm93S28vU01zelpkK1gvNUx6N3M9
+install:
+- git config --global user.email "CI@hernrup.se"
+- git config --global user.name "Travis CI"
+- pip install -r requirements.txt
+language: python
+python:
+- '3.4'
+script:
+- git remote set-url origin "https://${GH_TOKEN}@github.com/hernrup/hernrup_se_colors.git"
+- blog publish
