@@ -1,10 +1,9 @@
-Title: My super title
+Title: Under Construction
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
-Category: Painting
+Category: System
 Tags: pelican, publishing
-Slug: my-super-post
-Summary: Short version for index and feeds
+Summary: There will be a site here sometime in the future...
 
-aaasda This is tasdasdhe content of my super blog post.
-abcdesde
+There will be a site here sometime in the future...
+Please stand by...
